@@ -1,1 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/pBNUHphn)
+Maria Catrina Hadi
+BS Computer Science
+Live website link : 
+
+Through this exercise, I learned how to structure a webpage using HTML and apply CSS for styling to enhance my portfolio’s design. I also gained an understanding of how to host a website using GitHub Pages, making it accessible online. 
