@@ -2,6 +2,146 @@
 <html>
 <head>
   <title>CMSC 100 Exercise 2</title> 
+  <style>
+    body {
+      background: linear-gradient(to bottom, #f5e6e8, #d5c7bc);
+      margin: 0;
+      padding: 0;
+      font-family: Tahoma, sans-serif;
+    }
+
+    .flex-container {
+      background-color: #d8bfd8;
+      display: flex;
+      align-items: center;
+      color: #5e4b56;
+      padding: 10px;
+    }
+
+    .logo img {
+      width: 80px;
+      height: auto;
+      margin-left: 10px;
+    }
+
+    .navigation {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navigation ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navigation ul li {
+      margin-left: 40px;
+    }
+
+    .navigation ul li:first-child {
+      margin-left: 0;
+    }
+
+    .navigation ul li a {
+      color: #5e4b56;
+      font-size: 22px;
+      text-decoration: none;
+    }
+
+    .navigation ul li a:hover {
+      color: #a67db8;
+    }
+
+    .intro-container {
+      display: flex; 
+      align-items: center; 
+      margin-top: 80px; 
+      justify-content: center;
+    }
+
+    .intro img {
+      width: 375px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .intro-text {
+      margin-left: 60px;
+      color: #5e4b56;
+      text-align: left;
+    }
+
+    .intro-text h1 {
+      font-size: 62px;
+      margin-bottom: 10px;
+      color: #a67db8;
+    }
+
+    .intro-text p {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    .photos-container {
+      display: flex;
+      justify-content: space-around; 
+      margin-top: 20px; 
+    }
+
+    .photo {
+      text-align: center;
+      margin: 0 5px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .photo:hover {
+      transform: scale(1.1);
+    }
+
+    .photo img {
+      width: 350px;
+      height: 250px; 
+      object-fit: cover; 
+      border-radius: 10px;
+    }
+
+    .photo p {
+      font-size: 16px;
+      color: #5e4b56;
+      margin-bottom: 70px;
+    }
+
+    .projects-made {
+      text-align: center; 
+      color: #a67db8; 
+      font-size: 30px;
+      margin-top: 60px;
+    }
+
+    .footer {
+      color: #5e4b56;
+      font-size: 14px;
+      padding: 20px;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 25px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer img {
+      width: 40px;
+      height: auto;
+      margin: 0 10px;
+    }
+  </style>
 </head>
 <body>
   <div class="flex-container">
@@ -9,7 +149,7 @@
       <img src="logo.png">
     </div>
     <div class="navigation">
-      <ul> <!-- Navigation Buttons and Example Link (opens to a new tab) -->
+      <ul>
         <li><a href="https://example.com" target="_blank">Home</a></li>
         <li><a href="https://example.com" target="_blank">About</a></li>
         <li><a href="https://example.com" target="_blank">Projects</a></li>
@@ -18,5 +158,43 @@
     </div>
   </div>
 
+  <div class="intro-container">
+    <div class="intro">
+      <img src="me.jpg">
+    </div>
+    <div class="intro-text">
+      <h1>Hello, I'm Catrina!</h1>
+      <p>
+        I am a Computer Science student at the University of the Philippines Los Baños, nearing graduation. <br>
+        I have hands-on experience with various programming languages, including Python, Java, C, R, HTML, and CSS. <br>
+        Currently, I am focusing on enhancing my frontend development skills through continuous practice and exploration. <br>
+      </p>
+    </div>
+  </div>
+
+  <h2 class="projects-made">Projects Made</h2>
+
+  <div class="photos-container">
+    <div class="photo">
+      <img src="proj1.png">
+      <p>CMSC 150 Project: Generic Solvers using R</p>
+    </div>
+    <div class="photo">
+      <img src="proj2.png"> 
+      <p>CMSC 22 Project: Yoda's World using Java</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer">
+    <div class="footer-container">
+      <img src="fb.png" alt="Facebook">
+      <img src="ig.png" alt="Instagram">
+      <img src="gmail.png" alt="Gmail">
+      <img src="twitter.png" alt="Twitter">
+    </div>
+    <p>Copyright. All rights reserved.</p>
+  </div>
 </body>
 </html>
